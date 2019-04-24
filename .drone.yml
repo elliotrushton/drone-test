@@ -5,6 +5,9 @@ steps:
 
 - name: backend
   image: golang
+  platform:
+    os: windows
+    arch: amd64
   commands:
   - go build
   - go test
